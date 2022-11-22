@@ -1,0 +1,125 @@
+:root{
+    --main-color:rgb(77, 73, 73);
+    --wiite-color:white;
+    --transition:.6s;
+}
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: 0;
+}
+/* start Navbar  */
+.navbar{
+    background-color:transparent;
+        position: fixed;
+        right:11%;
+        left: 11%;
+        padding: 25px;
+    
+
+}
+.navbar .logo{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    color:var(--wiite-color);
+    margin: -5px;
+    position: absolute;
+    animation: kasem 1s infinite alternate;
+    font-size: 55px;
+    
+}
+
+.navbar ul{
+    display: inline;
+    padding-left: 206px;
+}
+.navbar ul li{
+    
+     display: inline;}
+a{ 
+color:var(--wiite-color);
+list-style: none;
+text-decoration: none;
+margin-right: 30px;
+margin: 50px;
+font-size: 22px;
+transition: var(--transition);
+font-family: 'IM Fell English', serif;
+}
+a:hover{
+    color: var(--main-color);
+    letter-spacing: 2px;
+
+}
+
+button{
+    width: 90px;
+    height: 40px;
+    border-radius: 18px;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    font-size: 13px;
+    font-family: 'IM Fell English', serif;
+    transition: var(--transition);
+    cursor: pointer;
+
+}
+button:hover{
+    color:white;
+    background: var(--main-color);
+
+    
+}
+/* end navbar  */
+.background{
+width: 100%;
+height: 100vh;
+background-image: url(../img/joey-banks-YApiWyp0lqo-unsplash.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+    
+    
+
+}
+.go{
+    font-size: 85px;
+    position: fixed;
+    right: 51%;
+    bottom: 33%;
+    transform: translate(50%,50%);
+    color: var(--wiite-color);
+    animation: kasem 1.5s infinite alternate;
+    cursor: pointer;
+    transition: 1.5s;
+
+
+}
+.go:hover{
+transform: rotatey(90deg);
+}
+@keyframes kasem{
+    
+        0%{
+color: white;        }
+        100%{
+            
+            color: var(--main-color);
+        }
+    }
+  /* .foard{
+        width: 250px;
+        height: 100px;
+        background-image: url(../img/ford-falcon-xb-car-ford-motor-company-ford-mustang-ford-logo-png-file-f1d476d883b87b094de8e5087b174439.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color:var(--wiite-color);
+       margin-top: -300px;
+        top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    } */
